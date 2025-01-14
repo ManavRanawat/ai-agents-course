@@ -353,7 +353,18 @@ def foodHeuristic(state: Tuple[Tuple, List[List]], problem: FoodSearchProblem):
     """
     position, foodGrid = state
     "*** YOUR CODE HERE ***"
-    return 0
+    gameState = problem.startingGameState
+    minDist=float('inf')
+    maxDist=0
+    foodCoord = foodGrid.asList()
+    # print(foodCoord)
+
+    for food in foodCoord:
+        dist = mazeDistance(position, food, gameState)
+        minDist = min(minDist, dist)
+        maxDist=max(maxDist, dist)
+     
+    return maxDist
 
 
 def mazeDistance(point1: Tuple[int, int], point2: Tuple[int, int], gameState: pacman.GameState) -> int:

@@ -190,7 +190,21 @@ class ValueIterationAgent(Agent):
           value iteration, V_k+1(...) depends on V_k(...)'s.
         """
         "*** YOUR CODE HERE ***"
-        util.raiseNotDefined()
+        states = self.mdp.getStates()
+        iterations = self.iterations
+
+        for i in range(iterations):
+            # if i==10:
+            #     print(self.values)
+            currValues = util.Counter()
+            for state in states:
+                action = self.getAction(state)
+                if action:
+                    currValues[state] = self.computeQValueFromValues(state,action)
+
+            self.values = currValues
+
+        # util.raiseNotDefined()
 
     def getValue(self, state):
         """
@@ -204,7 +218,18 @@ class ValueIterationAgent(Agent):
           value function stored in self.values.
         """
         "*** YOUR CODE HERE ***"
-        util.raiseNotDefined()
+        transitionStatesAndProbs = self.mdp.getTransitionStatesAndProbs(state, action)
+        tot=0
+
+        for transitionStateAndProb in transitionStatesAndProbs:
+            transitionState, prob = transitionStateAndProb
+            reward = self.mdp.getReward(state, action, transitionState)
+            value = self.values[transitionState]
+
+            tot+= prob*(reward+value*self.discount)
+
+        return tot
+        # util.raiseNotDefined()
 
     def computeActionFromValues(self, state):
         """
@@ -216,7 +241,22 @@ class ValueIterationAgent(Agent):
           terminal state, you should return None.
         """
         "*** YOUR CODE HERE ***"
-        util.raiseNotDefined()
+        allActions = self.mdp.getPossibleActions(state)
+        # if not allActions:
+        #     return None
+        
+        bestAction = None
+        bestVal = -float('inf')
+
+        for action in allActions:
+            val = self.computeQValueFromValues(state,action)
+            if val>bestVal:
+                bestVal=val
+                bestAction=action
+        
+
+        return bestAction
+        # util.raiseNotDefined()
 
     def getPolicy(self, state):
         return self.computeActionFromValues(state)
