@@ -1,7 +1,7 @@
 -
   date: 2025-01-07
   title: Intro
-  recording: 
+  slides: intro.pdf
   # readings:
   #       -
   #         authors: Jason Scott
@@ -12,16 +12,16 @@
 -
   date: 2025-01-09
   title: What are Agents?
-  recording: 
+  slides: what_is_an_agent.pdf
   readings:
         -
           title: AIMA Chapter 1
           url: https://aima.cs.berkeley.edu/global-index.html
-          authors: Stuart Russel and Peter Norvig
+          authors: Stuart Russell and Peter Norvig
 -
   date: 2025-01-14
   title: Simulated Environments and Reality
-  recording: 
+  slides: simulations_and_reality.pdf
   readings:
         -
           title: A Systematic Survey of Text Worlds as Embodied Natural Language Environments
@@ -31,3 +31,93 @@
           title: Action Castle
           url: http://memento-mori.com/pdf/parsely-preview-n-play-edition
           authors: Jared Sorensen
+-
+  date: 2025-01-16
+  title: How to make a simulation?
+  slides: how_to_make_a_simulation.pdf
+  readings:
+        -
+          title: Intro to PDDL
+          url: https://fareskalaboud.github.io/LearnPDDL/
+          authors: Fares Alaboud 
+        -
+          title: Intro to Inform7
+          url: https://ganelson.github.io/inform-website/
+          authors: Graham Nelson
+        -
+          title: The Visible Zorker
+          url: https://blog.zarfhome.com/2025/01/the-visible-zorker
+          authors: Andrew Plotkin
+        -
+          authors: Jason Scott
+          url: https://www.youtube.com/watch?v=LRhbcDzbGSU
+          title: "GET LAMP: The Text Adventure Documentary"
+          length: 2 hours
+          optional: true
+- 
+  date: 2025-01-21
+  title: Search for Planning in Simulations
+  slides: search_planning_simulation.pdf
+  readings:
+        -
+          title: Intro to STRIPS
+          url: https://www.primaryobjects.com/2015/11/06/artificial-intelligence-planning-with-strips-a-gentle-introduction/
+          authors: Kory Becker
+        -
+          title: AIMA Chapter 11
+          url: https://aima.cs.berkeley.edu/newchap11.pdf
+          authors: Stuart Russell and Peter Norvig
+        -
+          title: RL Book Chapter 8.1, 8.9-8.11
+          url: http://incompleteideas.net/book/RLbook2020.pdf
+          authors: Rich Sutton and Andrew Barto
+-
+  date: 2025-01-23
+  title: Classical Control, Pre-Deep Learning
+  slides: # how_to_make_a_simulation.pdf
+  readings:
+        -
+          title: RL Book Chapter 4, 5
+          url: http://incompleteideas.net/book/RLbook2020.pdf
+          authors: Rich Sutton and Andrew Barto
+-
+  date: 2025-01-28
+  title: Deep Reinforcement Learning, Pre-LLMs
+  slides: # how_to_make_a_simulation.pdf
+  readings:
+        -
+          title: RL Book Chapter 6.1-6.5
+          url: http://incompleteideas.net/book/RLbook2020.pdf
+          authors: Rich Sutton and Andrew Barto
+        -
+          title: Playing Atari with Deep Reinforcement Learning
+          url: https://arxiv.org/abs/1312.5602
+          authors: Minh et al. 2013
+        -
+          title: (Nature version) Human-level control through deep reinforcement learning
+          url: https://daiwk.github.io/assets/dqn.pdf
+          authors: Minh et al. 2015
+          optional: true
+-
+  date: 2025-01-30
+  title: Project Workshopping
+-
+  date: 2025-02-04
+  title: Project Pitches
+-
+  date: 2025-02-06
+  title: Reinforcement Learning and Search Combined
+  readings:
+        -
+          title: (Alpha Zero) Mastering Chess and Shogi by Self-Play with a General Reinforcement Learning Algorithm
+          url: https://arxiv.org/abs/1712.01815
+          authors: Silver et al. 2017
+        -
+          title: How to Avoid Being Eaten by a Grue Structured Exploration Strategies for Textual Worlds
+          url: https://arxiv.org/abs/2006.07409
+          authors: Ammanabrolu et al. 2019
+        -
+          title: (Mu Zero) Mastering Atari, Go, Chess and Shogi by Planning with a Learned Model
+          url: https://arxiv.org/abs/1911.08265
+          authors: Schrittwieser et al. 2019
+          optional: True
