@@ -1,0 +1,11 @@
+take key
+unlock door
+go east
+take sword
+take vinegar
+remove rust
+go west
+go west
+light lamp
+go north
+use sword
