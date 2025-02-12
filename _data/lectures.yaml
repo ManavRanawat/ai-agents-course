@@ -117,8 +117,13 @@
   title: HW1 Due
   type: homework
 -
+  date: 2025-02-07
+  title: Project Pitch Slide Decks Due
+  type: deadline
+-
   date: 2025-02-06
   title: Reinforcement Learning and Search Combined
+  slides: rl_search_combined.pdf
   readings:
         -
           title: (Alpha Zero) Mastering Chess and Shogi by Self-Play with a General Reinforcement Learning Algorithm
@@ -136,7 +141,7 @@
 -
   date: 2025-02-11
   title: Attention and Language Modeling
-  recording:
+  slides: attention_language_modeling.pdf
   readings:
         -
           title: Attention is All You Need
@@ -155,6 +160,10 @@
   title: RL for Language Agents Pt 1 (Online RL for NLP, RLHF)
   recording: 
   readings:
+        -
+          title: RL Book Chapter 13
+          url: http://incompleteideas.net/book/RLbook2020.pdf
+          authors: Rich Sutton and Andrew Barto
         -
           title: Is Reinforcement Learning (Not) for Natural Language Processing? Benchmarks, Baselines, and Building Blocks for Natural Language Policy Optimization
           url: https://github.com/allenai/RL4LMs
