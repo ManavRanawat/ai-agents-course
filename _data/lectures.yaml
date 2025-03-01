@@ -158,7 +158,7 @@
 -
   date: 2025-02-13
   title: RL for Language Agents Pt 1 (Online RL for NLP, RLHF)
-  recording: 
+  slides: rl_language_agents_pt1.pdf
   readings:
         -
           title: RL Book Chapter 13
@@ -175,7 +175,7 @@
 -
   date: 2025-02-18
   title: RL for Language Agents Pt 2 (Rewards and Closed Form Methods)
-  recording:
+  slides: rl_language_agents_pt2.pdf
   readings:
         -
           title: Let's Verify Step by Step
@@ -196,7 +196,7 @@
 -
   date: 2025-02-20
   title: Prompt Optimization
-  recording: 
+  slides: prompting.pdf
   readings:
         -
           title: ReAct Synergizing Reasoning and Acting in Language Models
@@ -218,7 +218,7 @@
 -
   date: 2025-02-25
   title: Neurosymbolic Tool Use Methods and Agent Reasoning
-  recording: 
+  slides: neurusymbolic_control.pdf
   readings:
         -
           title: Behavior Cloned Transformers are Neurosymbolic Reasoners
@@ -239,7 +239,7 @@
 -
   date: 2025-02-27
   title: Agent Reasoning and Inference Time Methods
-  recording: 
+  slides: inference_time_scaling.pdf
   readings:
         -
           title: Quiet-STaR Language Models Can Teach Themselves to Think Before Speaking
@@ -253,10 +253,6 @@
           title: Stream of Search (SoS) Learning to Search in Language
           url: https://arxiv.org/abs/2404.03683
           authors: Gandhi et al.
--
-  date: 2025-03-04
-  title: HW3 Due
-  type: homework
 -
   date: 2025-03-04
   title: Multi-Agent Systems and Human-AI Collaboration
@@ -274,6 +270,10 @@
           title: A Survey on Human-AI Teaming with Large Pre-Trained Models
           url: https://arxiv.org/abs/2403.04931
           authors: Vats et al.
+-
+  date: 2025-03-06
+  title: HW3 Due
+  type: homework
 -
   date: 2025-03-06
   title: Societal Impacts and Agent Safety
@@ -309,3 +309,7 @@
   date: 2025-03-13
   title: Final Presentations Pt 2
   recording: 
+-
+  date: 2025-03-17
+  title: Final Project Writeups Due
+  type: deadline
